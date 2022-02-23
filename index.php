@@ -12,6 +12,11 @@
 ?>
 
     </ol>
+
+  <?php
+    the_posts_pagination();
+  ?>
+
   </article>
 </main>
 
