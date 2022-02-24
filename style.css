@@ -139,6 +139,16 @@ main.front-page{
   flex-direction: column;
 }
 
+.front-page section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-not-found{
+  margin: 1.5em 0;
+}
+
 #front-page-logo{
   transform: scale(1.0);
   transition: transform 0.2s;
@@ -206,7 +216,7 @@ main.front-page{
 
 /* Mailing List */
 
-.mailing-list input[type="text"]{
+input[type="text"]{
   border: none;
   border-bottom: 1px solid var(--grey-black);
   padding: 0.3em 0.5em;
@@ -333,6 +343,17 @@ article{
 
 .article-next{
   float: right;
+}
+
+/* Search */
+
+#searchform{
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+#search-results-query{
+  margin-bottom: 1.5em;
 }
 
 /* Navigation */

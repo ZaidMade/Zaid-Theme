@@ -2,6 +2,9 @@
 
 <main>
   <article>
+
+    <?php get_search_form(); ?>
+
     <ol id="archive">
 
 <?php

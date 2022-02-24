@@ -23,19 +23,18 @@
       <div class="nav-logo-wrapper">
 
       <?php
-      if(!is_front_page() && function_exists('the_custom_logo')):
+      if(!is_front_page() && !is_404() && function_exists('the_custom_logo')):
         $custom_logo_id = get_theme_mod('custom_logo');
         $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
       ?>
 
-        <a href="index.php">
+        <a href="<?php echo home_url( '/' ); ?>">
           <img class='nav-logo' src="<?php echo $logo[0]; ?>">
         </a>
 
       <?php
       endif;
       ?>
-
       </div>
 
       <div>

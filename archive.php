@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 
 <main>
-  <ol>
+  <article>
+    <ol id="archive">
 
 <?php
   while(have_posts()){
@@ -10,7 +11,8 @@
   }
 ?>
 
-  </ol>
+    </ol>
+  </article>
 </main>
 
 <?php get_footer(); ?>
