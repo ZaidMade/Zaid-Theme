@@ -11,14 +11,17 @@
       <?php the_category(); ?>
       <?php
         the_tags(
-          '<span class="tag"><i class="fa fa-tag"></i> ',
-          '</span><span class="tag"><i class="fa fa-tag"></i> ',
+          '<span class="tag"> <i class="fa fa-tag"></i> ',
+          '</span><span class="tag"> <i class="fa fa-tag"></i> ',
           '</span>'
         );
       ?>
+      <?php edit_post_link('Edit Post', '<span><i class="fa fa-edit"></i> ', '</span>'); ?>
     </small>
 
-    <h3><?php the_title(); ?></h3>
+    <a href="<?php the_permalink(); ?>">
+      <h3><?php the_title(); ?></h3>
+    </a>
 
     <?php the_excerpt(); ?>
 

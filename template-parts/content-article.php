@@ -5,7 +5,10 @@
     <span class="date"><i class="fa fa-clock"></i> <?php the_date(); ?></span>
     <?php the_category(); ?>
     <span class="comment"><a href="#comments"><i class="fa fa-comment"></i> <?php comments_number(); ?></a></span>
+    <?php edit_post_link('Edit Post', '<span><i class="fa fa-edit"></i> ', '</span>'); ?>
   </section>
+
+
 
   <section class="article-title">
     <h3><?php the_title(); ?></h3>
@@ -24,8 +27,8 @@
   <section class="article-meta">
     <?php
       the_tags(
-        '<span class="tag"><i class="fa fa-tag"></i> ',
-        '</span><span class="tag"><i class="fa fa-tag"></i> ',
+        '<span class="tag"> <i class="fa fa-tag"></i> ',
+        '</span><span class="tag"> <i class="fa fa-tag"></i> ',
         '</span>'
       );
     ?>

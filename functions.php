@@ -46,4 +46,32 @@ function zaid_comment_time_ago_function(){
 }
 add_filter('get_comment_date', 'zaid_comment_time_ago_function');
 
+function zaid_widget_areas(){
+  register_sidebar(
+    array(
+      'before_title' => '<strong>',
+      'after_title' => '</strong>',
+      'before_widget' => '',
+      'after_widget' => '',
+      'name' => 'Sidebar',
+      'id' => 'header-sidebar',
+      'description' => 'Header Sidebar Widget Area'
+    )
+  );
+
+  register_sidebar(
+    array(
+      'before_title' => '<strong>',
+      'after_title' => '</strong>',
+      'before_widget' => '',
+      'after_widget' => '',
+      'name' => 'Footer Area',
+      'id' => 'footer-sidebar',
+      'description' => 'Footer Sidebar Widget Area'
+    )
+  );
+
+}
+add_action('widgets_init', 'zaid_widget_areas');
+
 ?>

@@ -38,6 +38,7 @@
 
       </div>
 
+      <div>
       <?php
         wp_nav_menu(
           array(
@@ -48,6 +49,9 @@
           )
         );
       ?>
+    </div>
+
+    <?php dynamic_sidebar('header-sidebar'); ?>
 
     </nav>
 

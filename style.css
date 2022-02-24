@@ -58,10 +58,6 @@ footer{
   padding: 15px 0;
 }
 
-h1, h2, h3, h4, h5{
-  letter-spacing: 0.15em;
-}
-
 small{
   font-size: 0.75em;
 }
@@ -73,6 +69,11 @@ span{
 a{
   text-decoration: none;
   color: var(--blue);
+}
+
+h1, h2, h3, h4, h5{
+  letter-spacing: 0.15em;
+  color: var(--black);
 }
 
 p{
@@ -351,8 +352,8 @@ article{
 
 .nav-main ul .nav-item{
   padding: 0;
-  margin: 14px 0;
   padding-left: 7px;
+  margin: 1.5em 0;
   line-height: 14px;
 }
 
@@ -529,15 +530,30 @@ ol#archive > li{
 
 .page-numbers{
   padding: 0.3em 0.5em;
+  margin: 0 0.25em;
   background-color: var(--black);
   color: var(--white);
   border-radius: 5px;
   border: 2px solid var(--black);
+  transition: all 0.25s ease;
+}
+
+a.page-numbers:hover{
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .current{
   background-color: var(--blue);
   border-color: var(--blue);
+}
+
+.pagination .nav-links .prev::before{
+  content: "← ";
+}
+
+.pagination .nav-links .next::after{
+  content: " →";
 }
 
 /* Resizing */
