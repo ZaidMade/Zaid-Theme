@@ -35,13 +35,6 @@
     <?php dynamic_sidebar('homepage-sidebar'); ?>
   </section>
 
-  <!--<section>
-    <form class="mailing-list">
-      <input type="text" placeholder="Email...">
-      <input type="submit" value="Subscribe">
-    </form>
-  </section>-->
-
 </main>
 
 <?php get_footer(); ?>

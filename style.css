@@ -216,12 +216,16 @@ main.front-page{
 
 /* Mailing List */
 
-.wpcf7-form{
-  text-align: center;
+code{ /* Because Newsletter plugin wraps custom forms in <code> tags for whatever reason... :c */
+  font-family: inherit !important;
+  font-size: inherit !important;
+  color: inherit !important;
+  word-wrap: inherit !important;
+  direction: inherit !important;
 }
 
-.wpcf7-spinner{
-  display: none;
+.mailinglist{
+  text-align: center;
 }
 
 .mailinglist-email{
@@ -276,7 +280,7 @@ article{
 }
 
 .article-title{
-  border-left: 7px solid var(--blue);
+  border-left: 10px solid var(--blue);
   padding: 1em 0;
   padding-left: 2em;
   margin: 2em 0;
@@ -363,12 +367,18 @@ article{
 /* Search */
 
 #searchform{
-  margin-bottom: 3em;
-  text-align: center;
+  margin-bottom: 4em;
+  /*text-align: center;*/
 }
 
 #search-results-query{
   margin-bottom: 1.5em;
+}
+
+.search-icon{
+  top: 0.25em;
+  position: relative;
+  margin-right: 0.5em;
 }
 
 /* Navigation */
@@ -627,5 +637,9 @@ a.page-numbers:hover{
 
   .nav-main ul{
     padding-left: 0;
+  }
+
+  #searchform{
+    text-align: center;
   }
 }
