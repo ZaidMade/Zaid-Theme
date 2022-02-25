@@ -216,6 +216,19 @@ main.front-page{
 
 /* Mailing List */
 
+.wpcf7-form{
+  text-align: center;
+}
+
+.wpcf7-spinner{
+  display: none;
+}
+
+.mailinglist-email{
+  width: 15em;
+}
+
+.mailinglist-email,
 input[type="text"]{
   border: none;
   border-bottom: 1px solid var(--grey-black);
@@ -223,6 +236,7 @@ input[type="text"]{
   margin-right: 1em;
 }
 
+.mailinglist-submit,
 input[type="submit"]{
   border: none;
   background-color: var(--black);
@@ -233,6 +247,7 @@ input[type="submit"]{
   transition: all 0.25s ease;
 }
 
+.mailinglist-submit:hover,
 input[type="submit"]:hover{
   color: var(--black);
   background-color: var(--white);

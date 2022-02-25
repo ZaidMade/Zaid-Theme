@@ -65,11 +65,24 @@ function zaid_widget_areas(){
       'after_title' => '</strong>',
       'before_widget' => '',
       'after_widget' => '',
-      'name' => 'Footer Area',
-      'id' => 'footer-sidebar',
-      'description' => 'Footer Sidebar Widget Area'
+      'name' => 'Homepage Area',
+      'id' => 'homepage-sidebar',
+      'description' => 'Homepage Widget Area'
     )
   );
+
+  register_sidebar(
+    array(
+      'before_title' => '<strong>',
+      'after_title' => '</strong>',
+      'before_widget' => '',
+      'after_widget' => '',
+      'name' => 'Footer Area',
+      'id' => 'footer-sidebar',
+      'description' => 'Footer Widget Area'
+    )
+  );
+
 
 }
 add_action('widgets_init', 'zaid_widget_areas');
