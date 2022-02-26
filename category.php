@@ -3,7 +3,7 @@
 <main>
   <article>
     <?php get_search_form(); ?>
-    <h3 class="article-title">Articles <?php the_category(); ?>...</h3>
+    <h3 class="article-title">Articles <?php the_category(); ?>:</h3>
     <ol id="archive">
 
 <?php

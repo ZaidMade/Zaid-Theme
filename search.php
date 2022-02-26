@@ -3,7 +3,7 @@
 <main>
   <article>
     <?php get_search_form(); ?>
-    <h3 class="article-title">Search results for '<?php the_search_query(); ?>'...</h3>
+    <h3 class="article-title">Search results for '<?php the_search_query(); ?>':</h3>
     <ol id="archive">
 
 <?php

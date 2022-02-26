@@ -28,22 +28,25 @@ body, html{
 }
 
 body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-size: 18px;
   letter-spacing: 0.1em;
 }
 
 @media(max-width: 1920px){
   body{
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
 @media(max-width: 1300px){
   body{
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -72,13 +75,41 @@ a{
 }
 
 h1, h2, h3, h4, h5{
-  letter-spacing: 0.15em;
+  font-weight: 700;
+  letter-spacing: 0.2em;
   color: var(--black);
 }
 
 p{
-  line-height: 1.6;
+  line-height: 2;
   margin-bottom: 1em;
+}
+
+p.quote{
+  font-family: 'GideonRoman', 'Roboto', sans-serif;
+  border-radius: 5px;
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+p.quote::before{
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: 2em;
+  content: "\f10d";
+  color: #ddd;
+
+  position: absolute;
+  margin-left: -2.5em;
+  margin-top: -0.6em;
+}
+
+span.quote-citation{
+  display: block;
+  text-align: right;
+  margin: 0 3em;
+  margin-top: 0.5em;
+  font-size: 0.75em;
 }
 
 button{
@@ -165,6 +196,13 @@ main.front-page{
   }
 }
 
+@media(max-width: 800px){
+  main.front-page{
+    height: 50vh;
+    min-height: 300px;
+  }
+}
+
 /* Social Media */
 
 .social-nav ul{
@@ -228,7 +266,7 @@ code{ /* Because Newsletter plugin wraps custom forms in <code> tags for whateve
 }
 
 .mailinglist-email{
-  width: 15em;
+  width: 12em;
 }
 
 .mailinglist-email,
@@ -285,9 +323,18 @@ article{
   margin: 2em 0;
 }
 
+.article-title h1,
+.article-title h2,
+.article-title h3,
+.article-title h4,
+.article-title h5{
+  margin-bottom: 0;
+}
+
 .article-content p{
   text-indent: 2.5em;
   font-weight: 400;
+  display: inline-block;
 }
 
 .article-content p:last-of-type{
@@ -367,11 +414,18 @@ article{
 
 #searchform{
   margin-bottom: 4em;
-  /*text-align: center;*/
 }
 
 #search-results-query{
   margin-bottom: 1.5em;
+}
+
+#s{
+  width: 12em;
+}
+
+#author, #email{
+  max-width: 100%;
 }
 
 .search-icon{
@@ -459,11 +513,15 @@ cite.fn{
   margin-top: 0.5em;
   background-color: #eee;
   border-radius: 5px;
-  padding: 0.5em 1em;
+  padding: 1em;
 }
 
 .comment p a{
-  text-decoration: underline;
+  color: var(--blue);
+}
+
+.comment-edit-link{
+  color: var(--blue) !important;
 }
 
 #reply-title,
@@ -522,6 +580,7 @@ label{
 
 #comment{
   resize: both;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -532,6 +591,10 @@ label{
 .comment-form-cookies-consent label{
   display: inline-block;
   font-size: 0.75em;
+}
+
+#respond{
+  margin-top: 3em;
 }
 
 /* Archive */
@@ -620,7 +683,7 @@ a.page-numbers:hover{
   }
 
   article{
-    margin-left: 250px;
+    margin-left: 225px;
   }
 }
 
@@ -639,6 +702,7 @@ a.page-numbers:hover{
 
   article{
     margin-left: 0;
+    margin-top: 0;
   }
 
   .nav-main ul{

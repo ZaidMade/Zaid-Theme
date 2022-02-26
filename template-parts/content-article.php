@@ -37,14 +37,14 @@
     </span>
   </section>
 
-  <section class="article-more">
+  <!-- <section class="article-more">
     <a class="article-previous" href="#">
       <button>&larr; Previous</button>
     </a>
     <a class="article-next" href="#">
       <button>Next &rarr;</button>
     </a>
-  </section>
+  </section> -->
 
 
 

@@ -22,7 +22,9 @@ add_action('init', 'zaid_menus');
 # Add the CSS
 function zaid_register_styles(){
   $version = wp_get_theme()->get('Version');
-  wp_enqueue_style('zaid-style', get_template_directory_uri() . "/style.css", array('zaid-bootstrap'), $version, 'all');
+  wp_enqueue_style('zaid-gideonroman', get_template_directory_uri() . "/assets/fonts/GideonRoman/GideonRoman.css", array(), $version, 'all');
+  wp_enqueue_style('zaid-poppins', get_template_directory_uri() . "/assets/fonts/Poppins/Poppins.css", array(), $version, 'all');
+  wp_enqueue_style('zaid-style', get_template_directory_uri() . "/style.css", array('zaid-bootstrap', 'zaid-poppins', 'zaid-gideonroman', 'zaid-fontawesome'), $version, 'all');
   wp_enqueue_style('zaid-bootstrap', get_template_directory_uri() . "/assets/bootstrap-5.1.3/css/bootstrap.min.css", array(), '5.1.3', 'all');
   wp_enqueue_style('zaid-fontawesome', get_template_directory_uri() . "/assets/fontawesome-free-6.0.0-web/css/all.min.css", array(), '6.0.0', 'all');
 }

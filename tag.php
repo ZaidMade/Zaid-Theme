@@ -3,7 +3,7 @@
 <main>
   <article>
     <?php get_search_form(); ?>
-    <h3 class="article-title">Tag: <?php single_tag_title(); ?>...</h3>
+    <h3 class="article-title">Articles with <?php single_tag_title(); ?>:</h3>
     <ol id="archive">
 
 <?php
