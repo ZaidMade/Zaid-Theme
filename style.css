@@ -461,11 +461,21 @@ article{
   margin-bottom: 1.5em;
 }
 
+.nav-main ul{
+  list-style: inherit;
+}
+
 .nav-main ul .nav-item{
   padding: 0;
-  padding-left: 7px;
+  padding-left: 0.5em;
   margin: 1.5em 0;
   line-height: 14px;
+}
+
+.nav-main ul .nav-item::before{
+  content: "🙂";
+  display: none;
+  margin-right: 0.5em;
 }
 
 .nav-main ul .nav-item::marker{
@@ -484,6 +494,21 @@ article{
 
 .nav-item a:hover{
   text-decoration: underline;
+}
+
+@media(max-width: 1024px){
+  .nav-main ul{
+    list-style: none;
+  }
+  .nav-main ul .nav-item::before{
+    display: inline;
+  }
+  .nav-main ul .nav-item::marker{
+    content: " ";
+  }
+  .nav-main ul .nav-item:hover::marker{
+    content: " ";
+  }
 }
 
 /* Comments */
